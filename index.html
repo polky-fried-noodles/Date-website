@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A little romantic invitation, made especially for you.">
+  <title>Love you Awwditya</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="ambient" aria-hidden="true"><span class="orb orb-one"></span><span class="orb orb-two"></span><div id="particleField"></div></div>
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="Toggle ambient music"><span aria-hidden="true">♫</span><span class="music-label">sound off</span></button>
+  <audio id="loveMusic" loop preload="metadata">
+    <source src="music/Ishq%20Wala%20Love%20Student%20Of%20The%20Year%20128%20Kbps.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="opening screen" id="opening" aria-labelledby="openingTitle">
+      <!-- <div class="section-kicker">a small note, from me to you</div> -->
+      <p class="eyebrow"><b>for <span data-partner>Aditya</span>, <span data-nickname>my Awwditya</span></b></p>
+      <p class="eyebrow" style="color: rgb(247, 98, 170)"><span>a small note, from me to you</span></p>
+      <h1 id="openingTitle">Hey Aditya... <span class="heart">♥</span></h1>
+      <p class="opening-copy">I made something for you paglee.</p>
+      <button class="primary-button open-button" id="openHeart" type="button"><span aria-hidden="true">♡</span><span>Open My Heart</span><span aria-hidden="true">✉</span></button>
+      <p class="scroll-hint"><span class="scroll-line"></span> take your time</p>
+    </section>
+
+    <section class="intro screen chapter" id="intro" aria-labelledby="introTitle">
+      <div class="chapter-number">01 / 07</div>
+      <div class="intro-content reveal">
+        <p class="eyebrow">before you say anything...</p>
+        <h2 id="introTitle">Just give me<br><em>a minute Bachuuu🫶.</em> <span class="soft-emoji">🥺</span></h2>
+        <div class="typewriter-wrap"><p id="typewriterText" aria-live="polite"></p></div>
+        <p class="intro-signoff">That someone is you. <span class="heart">♥</span></p>
+      </div>
+      <div class="chapter-aside">somewhere between<br>ordinary &amp; extraordinary</div>
+    </section>
+
+    <section class="story chapter" id="story" aria-labelledby="storyTitle">
+      <div class="section-inner">
+        <div class="section-heading reveal"><p class="eyebrow">our little story</p><h2 id="storyTitle">How We Became <em>Us</em> <span class="heart">♥</span></h2><p>A few moments I keep close.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span class="timeline-dot">01</span><div><p class="timeline-label">the first hello</p><h3>That one conversation I still remember.</h3></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot">02</span><div><p class="timeline-label">the first smile</p><h3>Somehow your smile became one of my favorite things.</h3></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot">03</span><div><p class="timeline-label">the moment I realized</p><h3>I started looking forward to talking to you a little too much.</h3></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot">04</span><div><p class="timeline-label">where we are now</p><h3>And honestly... I wouldn't change it.</h3></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="adore chapter" id="adore" aria-labelledby="adoreTitle">
+      <div class="section-inner"><div class="section-heading reveal"><p class="eyebrow">the list keeps growing</p><h2 id="adoreTitle">Things I Absolutely<br><em>Adore</em> About You <span class="heart">♥</span></h2></div>
+        <div class="adore-grid">
+          <button class="adore-card reveal" type="button"><span class="card-icon">☼</span><span class="card-title">Your Smile</span><span class="card-message">It makes even the most average day feel like a good one.</span></button>
+          <button class="adore-card reveal" type="button"><span class="card-icon">◌</span><span class="card-title">Your Voice</span><span class="card-message">I could listen to you tell me absolutely everything.</span></button>
+          <button class="adore-card reveal" type="button"><span class="card-icon">✦</span><span class="card-title">Your Random Talks</span><span class="card-message">The unexpected little stories are my favorite.</span></button>
+          <button class="adore-card reveal" type="button"><span class="card-icon">♡</span><span class="card-title">The Way You Care</span><span class="card-message">You notice the things most people miss.</span></button>
+          <button class="adore-card reveal" type="button"><span class="card-icon">〰</span><span class="card-title">Your Laugh</span><span class="card-message">Somehow it is contagious every single time.</span></button>
+          <button class="adore-card reveal featured" type="button"><span class="card-icon">♥</span><span class="card-title">Just... You.</span><span class="card-message">No explanation needed. You are the whole point. And lastly bacha mai thak gya hu </span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="memories chapter" id="memories" aria-labelledby="memoriesTitle">
+      <div class="section-inner"><div class="section-heading reveal"><p class="eyebrow">things worth keeping</p><h2 id="memoriesTitle">Little Moments,<br><em>Big Feelings</em> <span class="heart">♥</span></h2></div>
+        <div class="gallery" id="gallery">
+          <!-- Replace each data-image value with your local photo path. The fallback stays error-free until a real image is supplied. -->
+          <button class="photo-card photo-wide reveal" type="button" data-index="0" data-image="images/photo1.jpg"><span class="photo-fallback">your favorite moment</span><span class="photo-caption">the kind of day I wish I could replay</span></button>
+          <button class="photo-card reveal" type="button" data-index="1" data-image="images/photo2.jpg"><span class="photo-fallback">a little joy</span><span class="photo-caption">you, being wonderfully you</span></button>
+          <button class="photo-card reveal" type="button" data-index="2" data-image="images/photo3.jpg"><span class="photo-fallback">us, somewhere</span><span class="photo-caption">one for the memory box</span></button>
+          <button class="photo-card reveal" type="button" data-index="3" data-image="images/photo4.jpg"><span class="photo-fallback">golden hour</span><span class="photo-caption">everything looked softer that day</span></button>
+          <button class="photo-card photo-tall reveal" type="button" data-index="4" data-image="images/photo5.jpg"><span class="photo-fallback">that smile</span><span class="photo-caption">my favorite view</span></button>
+          <button class="photo-card reveal" type="button" data-index="5" data-image="images/photo6.jpg"><span class="photo-fallback">to be continued</span><span class="photo-caption">let's make more of these</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter screen chapter" id="letter" aria-labelledby="letterTitle">
+      <div class="letter-paper reveal"><span class="letter-stamp">♥</span><p class="eyebrow">a little something from my heart</p><h2 id="letterTitle">For <span data-nickname>my Awwditya</span>,</h2><div class="letter-copy"><p>I don't know exactly when it happened,<br>but somewhere between our conversations,<br>your smile, your little habits,<br>and all those random moments,<br>you became someone incredibly special to me.</p><p>And maybe I'm being a little brave right now...</p><p>because there's something I've been wanting to ask you.</p></div><p class="letter-sign">With way too much love,<br><span data-your>me</span> <span class="heart">♥</span></p></div>
+    </section>
+
+    <section class="suspense screen chapter" id="suspense" aria-labelledby="suspenseTitle"><div class="suspense-content reveal"><p class="eyebrow">okay, here goes...</p><h2 id="suspenseTitle">So...</h2><p class="suspense-line">I have one tiny question.</p><p class="suspense-line">Actually...<br><strong>one VERY important question.</strong> <span>👀♥</span></p><button class="outline-button" id="revealQuestion" type="button">Tell me the question <span>→</span></button></div></section>
+
+    <section class="question screen chapter" id="question" aria-labelledby="questionTitle"><div class="question-content reveal"><p class="eyebrow">the moment has arrived</p><h2 id="questionTitle">Will You Go On<br><em>A Date With Me?</em> <span class="heart">♥</span></h2><p>Just you + me + good food + good conversations +<br class="desktop-only"> a little bit of magic.</p><div class="question-actions"><button class="primary-button yes-button" id="yesButton" type="button">YES <span>♥</span></button><button class="quiet-button" id="maybeButton" type="button">Maybe? <span>👀</span></button></div></div></section>
+
+    <section class="answer chapter" id="answer" aria-live="polite"><div class="answer-content"><p class="eyebrow">you said yes</p><h2>YAYYYYY! <span class="heart">♥</span>🥹</h2><p>You just made my day.</p><p class="answer-sub">Date officially unlocked. <span>🔓💗</span></p><form class="date-card" id="dateForm"><div class="date-card-head"><span>DATE NIGHT</span><span>💕</span></div><h3>Just Us</h3><label>Location<input id="locationField" type="text" required></label><div class="form-row"><label>Date<input id="dateField" type="date" required></label><label>Time<input id="timeField" type="time" required></label></div><label>Dress code<input id="dressField" type="text"></label><label>Special message<textarea id="messageField" rows="2" placeholder="Something sweet to remember..."></textarea></label><button class="primary-button" type="submit">Save our date <span>♥</span></button></form><p class="saved-message" id="savedMessage">Can't wait to see you. <span class="heart">♥</span></p></div></section>
+
+    <section class="maybe chapter" id="maybe" aria-live="polite"><div class="maybe-content"><p class="eyebrow">no pressure, ever</p><h2>That's okay <span class="heart">♥</span></h2><p>Take your time.</p><p>But just know...<br>the invitation is always open. <span>🫶</span></p><button class="outline-button" id="thinkButton" type="button">Think about it <span>💗</span></button></div></section>
+
+    <section class="final screen chapter" id="final"><div class="final-content"><span class="final-heart">♥</span><p>Whatever happens,<br>I'm really glad you're in my life. <span class="heart">♥</span></p><small>made with way too much love<br><span data-your>me</span></small><button class="replay-button" id="replayButton" type="button">↻ Replay the experience</button></div></section>
+  </main>
+
+  <button class="surprise-button" id="surpriseButton" type="button" aria-label="Open a little surprise">♥</button>
+  <div class="surprise-modal" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="surpriseTitle" hidden><div class="surprise-box"><button class="modal-close" id="closeSurprise" type="button" aria-label="Close surprise">×</button><p class="eyebrow">okay... one last thing.</p><h2 id="surpriseTitle">If I could choose one person<br>to spend a beautiful evening with...</h2><p>I'd still choose you. <span class="heart">♥</span></p><button class="primary-button" id="surpriseQuestion" type="button">Ask me again <span>→</span></button></div></div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden><button class="modal-close" id="closeLightbox" type="button" aria-label="Close photo viewer">×</button><button class="lightbox-nav prev" id="prevPhoto" type="button" aria-label="Previous photo">‹</button><div class="lightbox-content"><div class="lightbox-image" id="lightboxImage"></div><p id="lightboxCaption"></p></div><button class="lightbox-nav next" id="nextPhoto" type="button" aria-label="Next photo">›</button></div>
+  <div id="confetti" aria-hidden="true"></div>
+</body>
+</html>
